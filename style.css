@@ -1,0 +1,53 @@
+/* Plain Css :) */
+
+
+.score-board {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.score-show {
+    height: 120px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+.score {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+.name {
+    text-align: center;
+}
+
+.choices{
+    margin-top: 10px;
+}
+
+.tellerBox{
+    width: 300px;
+    height: 1em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.buttons {
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.playButtons {
+    display: flex;
+    gap: 10px;
+}
+.roundBtn {
+    width: 80px;
+}

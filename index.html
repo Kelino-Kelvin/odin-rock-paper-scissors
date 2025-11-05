@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>Just open the console :)</p>
-    <script src="./learner.js"></script>
+    <div class="score-board">
+        <div class="score-show">
+            <div id="human-score" class="score">
+                
+            </div>
+            <div class="name">Human</div>
+        </div>
 
+        <div class="score-show">
+            <div id="robot-score" class="score">
+                
+            </div>
+            <div class="name">Robot</div>
+        </div>    
+    </div>
+
+    <div class="choices">
+        <div class="choice">
+            Robot Choice: <span id="robot-choice"></span>
+        </div>
+        <div class="choice">
+            Your Choice: <span id="human-choice"></span>
+        </div>
+    </div>
+    <div id="teller" class="tellerBox"></div>
+    <div id="teller-2" class="tellerBox"></div>
+
+    <div class="buttons">
+        <div class="start-area">
+            <button id="play-round">
+                Begin
+            </button>
+        </div>
+
+        <div class="playButtons">
+            <button id="rock" class="roundBtn">
+                Rock
+            </button>
+            <button id="paper" class="roundBtn">
+                Paper
+            </button>
+            <button id="scissors" class="roundBtn">
+                Scissors
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./learner.js"></script>
 </body>
 </html>
