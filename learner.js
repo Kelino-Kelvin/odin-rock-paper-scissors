@@ -15,10 +15,10 @@ let robotScore;
 let rbtChoice;
 let hmnChoice;
 
+// Robot choice generation
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 function getRobotChoice() {
     let random = randomInt(1, 3);
     let robotChoice;
@@ -30,7 +30,7 @@ function getRobotChoice() {
     return robotChoice;
 }
 
-
+// Round coputation
 function computeRound(human, robot) {
     switch (human) {
         case "rock":
@@ -92,6 +92,7 @@ function computeRound(human, robot) {
     }
 }
 
+
 function playRound(event) {
     hmnChoice = event.target.textContent;
     hmnChoice = hmnChoice.trim().toLowerCase();
@@ -133,6 +134,7 @@ function playGame() {
     teller2.textContent = "";
 }
 
+// Game functions
 startButton.addEventListener('click', playGame);
 roundBtn.forEach(
     button => {
