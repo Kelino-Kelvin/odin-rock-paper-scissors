@@ -7,53 +7,55 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h3>
-        Rock-Paper-Scissors. First to Three.
-    </h3>
-    <div class="score-board">
-        <div class="score-show">
-            <div id="human-score" class="score">
-                
+    <div class="wrapper">
+        <h3>
+            Rock-Paper-Scissors. First to Three.
+        </h3>
+        <div class="score-board">
+            <div class="score-show">
+                <div id="human-score" class="score">
+                    
+                </div>
+                <div class="name">You</div>
             </div>
-            <div class="name">Human</div>
+
+            <div class="score-show">
+                <div id="robot-score" class="score">
+                    
+                </div>
+                <div class="name">Robot</div>
+            </div>    
         </div>
 
-        <div class="score-show">
-            <div id="robot-score" class="score">
-                
+        <div class="choices">
+            <div class="choice">
+                Robot Choice: <span id="robot-choice"></span>
             </div>
-            <div class="name">Robot</div>
-        </div>    
-    </div>
-
-    <div class="choices">
-        <div class="choice">
-            Robot Choice: <span id="robot-choice"></span>
+            <div class="choice">
+                Your Choice: <span id="human-choice"></span>
+            </div>
         </div>
-        <div class="choice">
-            Your Choice: <span id="human-choice"></span>
-        </div>
-    </div>
-    <div id="teller" class="tellerBox"></div>
-    <div id="teller-2" class="tellerBox"></div>
+        <div id="teller" class="tellerBox"></div>
+        <div id="teller-2" class="tellerBox"></div>
 
-    <div class="buttons">
-        <div class="start-area">
-            <button id="play-round">
-                Start
-            </button>
-        </div>
+        <div class="buttons">
+            <div class="start-area">
+                <button id="play-round">
+                    Start
+                </button>
+            </div>
 
-        <div class="playButtons">
-            <button id="rock" class="roundBtn">
-                Rock
-            </button>
-            <button id="paper" class="roundBtn">
-                Paper
-            </button>
-            <button id="scissors" class="roundBtn">
-                Scissors
-            </button>
+            <div class="playButtons">
+                <button id="rock" class="roundBtn">
+                    Rock
+                </button>
+                <button id="paper" class="roundBtn">
+                    Paper
+                </button>
+                <button id="scissors" class="roundBtn">
+                    Scissors
+                </button>
+            </div>
         </div>
     </div>
 
