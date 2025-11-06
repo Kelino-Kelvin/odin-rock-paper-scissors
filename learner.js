@@ -139,7 +139,9 @@ startButton.addEventListener('click', playGame);
 roundBtn.forEach(
     button => {
             button.addEventListener('click', (buttonEvent) => {
-                if (humanScore >= 3 || robotScore >=3) {
+                if (humanScore === undefined || robotScore === undefined) {
+                    teller.textContent = 'Start Round';
+                } else if (humanScore >= 3 || robotScore >=3) {
                     teller.textContent = 'Restart Round';
                 } else {
                     playRound(buttonEvent);
