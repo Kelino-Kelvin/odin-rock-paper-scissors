@@ -1,5 +1,9 @@
 /* Plain Css :) */
 
+h3{
+    text-align: center;
+    width: 300px;
+}
 
 .score-board {
     width: 300px;

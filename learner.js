@@ -112,9 +112,9 @@ function playRound(event) {
 
     if (humanScore >= 3 || robotScore >=3) {
         if (humanScore > robotScore) {
-            teller2.textContent = "You won this round! It's first to 3";
+            teller2.textContent = "You WON this round!";
         } else {
-            teller2.textContent = "You lost this round! It's first to 3";
+            teller2.textContent = "You LOST this round!";
         };
     };
 }
